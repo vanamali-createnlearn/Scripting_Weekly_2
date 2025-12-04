@@ -1,8 +1,7 @@
--- LocalScript inside Enable Button
-
 local button = script.Parent
-local gui = button.Parent.Parent
+local gui = button.Parent -- ScreenGui
+local frame = gui:WaitForChild("Frame")
 
 button.MouseButton1Click:Connect(function()
-	gui.Enabled = true
+	frame.Visible = true
 end)
