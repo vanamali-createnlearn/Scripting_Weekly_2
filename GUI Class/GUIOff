@@ -3,8 +3,7 @@
 local button = script.Parent
 local player = game.Players.LocalPlayer
 local gui = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGUI") -- change name if different
-local frame = gui:WaitForChild("Frame")
 
 button.MouseButton1Click:Connect(function()
-	frame.Visible = false
+	gui.Enabled = false
 end)
