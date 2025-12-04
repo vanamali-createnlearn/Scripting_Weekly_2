@@ -1,8 +1,7 @@
 -- LocalScript inside Disable Button
 
 local button = script.Parent
-local player = game.Players.LocalPlayer
-local gui = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGUI") -- change name if different
+local gui = button.Parent.Parent
 
 button.MouseButton1Click:Connect(function()
 	gui.Enabled = false
