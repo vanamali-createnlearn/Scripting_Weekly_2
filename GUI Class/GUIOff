@@ -1,8 +1,6 @@
--- LocalScript inside Disable Button
-
 local button = script.Parent
-local gui = button.Parent.Parent
+local frame = button.Parent -- the Frame
 
 button.MouseButton1Click:Connect(function()
-	gui.Enabled = false
+	frame.Visible = false
 end)
